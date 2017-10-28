@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box; /* semuanya bakal sesuai ukuran */
+    /*box-sizing: border-box; nata ukur tabel masukan pencarian*/
+}
+
+body{
+    background-image:url(images/background.png); 
+    background-repeat:repeat-x; /* untuk gambar tidak berulang*/
+    background-size: 100%; /* untuk ukuran background */
+
+    font-family: Roboto, sans-serif; /*roboto ambil dari online dari link rel di insex.html*/
+
+}
+
+.site-content{ /* grouping seluruh content ke tengah */
+    max-width:1125px; /*supaya gambar background otomatis ngikutin besar kecil gchrome */
+    margin: 0 auto; /* hanya utk display block dan width untuk posisi tengah*/
+}
+/*class= hero utk header*/
+.hero{
+    padding:120px/*atas bawah */ 15px /*kiri kanan*/;
+    text-align:center;
+
+}
+.title , .subtitle{
+    display:block;
+}
+.title{ /*Taman Bandung*/
+    font-family:'Playfair Display';
+}
+.subtitle{/*Jelajah*/
+    font-family:'Caveat';
+    font-weight:normal; /* tebal engganya jelajah*/
+}
+.hero .title{
+    font-size:72px;
+}
+.hero p{ /* p untuk paragraf */
+    font-size: 22px;
+    font-weight: 300;
+}
+.hero .subtitle{
+    font-size:64px;
+}
+
+.hero form{
+    max-width: 550px;
+    margin: 70px auto 0;
+    position: relative; /* ngebatasin postion absolute */
+}
+
+.hero form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 70px 25px 25px;
+    border-radius: 45px; /* membulatkan tabel pencarian*/
+    border: none;
+    box-shadow: 0 10px 13px rgba(0,0,0,0.05) /* 0.5 untuk transparan tabel pencarian */
+}
+
+.hero form button { /*untuk icon pencarian */
+    position: absolute;
+    top:5px;
+    right:18px;
+    font-size: 36px;
+    color: #e3a6a9;
+    border: none;
+    background: none;
+}
