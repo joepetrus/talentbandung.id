@@ -57,6 +57,7 @@ body {
     margin: 20px 15px 50px;
 }
 
+
 .grid-item form button { /* untuk yang panah kiri kanan*/
     margin: 100px 15px 100px 0;
     font-size: 72px;
@@ -76,32 +77,30 @@ body {
 .daftar-gambar-layout .grid-item {
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 70px; /*mengatur rata gambar dgn panah */
     overflow: hidden;
 }
 .gambar {
     margin: 0; /*biar gambarnya rata rapi */
     text-decoration: none;
-    padding: 0 35px;
+    padding: 0 5px;
     margin: 0 auto;
     list-style: none;
     float: left;
+    width: 30%; /*ini adalah jarak antar gambar  */
+    
 }
-.gambar1 {
-    margin: 0; /*biar gambarnya rata rapi */
-    text-decoration: none;
-    padding: 0 10px;
-    margin: 0 15px;
-    list-style: none;
-    float: left;
+
+.gambar img { /*resize gambar */
+	width: 80%;
 }
 
 .left {
-    left: 0;
+    left: 0 ;
 }
 
 .right {
-    right: 0;
+    right: 0 ;
 }
 
 .map {
