@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="app">
+                <ol>
+                   <item-buah
+                      v-for="buah in daftarBuah"
+                      v-bind:buah="buah"
+                      v-bind:key="buah.id">
+                   </item-buah>
+                </ol>
+              </div>
+              <script src="https://unpkg.com/vue"></script>
+              <script>
+                  Vue.component('item-buah', {
+ props: ['buah'],
+ template: '<li>{{ buah.nama }}</li>'
+});
+var app = new Vue({
+ el: '#app',
+ data: {
+   daftarBuah: [
+     { id: 0, nama: 'Semangka' },
+     { id: 1, nama: 'Apel' },
+     { id: 2, nama: 'Jeruk' }
+   ]
+ }
+});
+
+              </script>
+    
+</body>
+</html>
