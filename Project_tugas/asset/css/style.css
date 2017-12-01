@@ -1,32 +1,51 @@
 body { font-family: sans-serif; }
 
-#main-menu .nav-bar { list-style:none; margin-top: 40px; }
-#main-menu .nav-bar li { display:inline; padding:0 90px; }
-
-#main-menu .nav-bar li a {
-  
-
-
-  text-decoration: none;
-  padding-left: 25px;
-  text-transform: uppercase;
-  color: #333;
-  text-shadow: 1px 1px 1px #ccc;
+/*=============================== Menu Bar =================================*/
+.list-cont {
+	position        : relative;
+	margin          : auto auto;
 }
 
-.nav-bar .nav-button-home a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/home.gif") no-repeat 0px -2px transparent; }
+.list-cont a {
+	float          : right;
+	display        : block;
+	color          : grey;
+	text-align     : center;
+	padding        : 14px 16px;
+	text-decoration: none;
+	font-size      : 15px;
+	transition     : 0.5s;
+}
 
-.nav-bar .nav-button-services a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/services.gif") no-repeat 0px -2px transparent; }
+.list-cont a:hover {
+	border-bottom: 2px solid #484848;
+	color        : #655f5f;
+}
 
-.nav-bar .nav-button-products a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/products.gif") no-repeat 0px -2px transparent; }
+.list-cont a.active {
+	color        : black;
+	border-bottom: 2px solid #484848;
+}
+.navbar-brand {
+	display: inline-block;
+	position: relative;
+	margin: auto;
+}
 
-
+.navbar-brand > img { /*gambar talent bandung */
+  display  : inline-block;
+  max-width: 60%;
+  
+  
+  
+  
+}
 
 /*===================================== SLIDER ==================================================== */
 
 #slider{
     width:100%;
-    height:100vh;
+    height:100vh; /*tinggi besar slider*/
     position:relative;
     overflow:hidden;
   }
@@ -85,7 +104,7 @@ body { font-family: sans-serif; }
     height:150px;
     float:left;
     position:relative;
-    top:300px;
+    top:280px;
     -webkit-animation:content-s 7.5s infinite; /*waktu untuk teks di gambar */
     -moz-animation:content-s 7.5s infinite;
     animation:content-s 7.5s infinite;
@@ -96,7 +115,7 @@ body { font-family: sans-serif; }
     color:#fff;
     text-align:left;
     margin-left:30px;
-    padding-bottom:10px;
+    
   }
   .content-txt h2{
     font-family:Quicksand;
@@ -106,6 +125,7 @@ body { font-family: sans-serif; }
     color:#fff;
     text-align:left;
     margin-left:30px;
+    
   }
   
   /* Switch */
@@ -341,38 +361,105 @@ body { font-family: sans-serif; }
       margin-left:45px;
     }
   }
-  /*======================= TABEL =========================================== */
+  /*========================= PROFIL LIHAT LEBIH LANJUT =========================*/
+  .main-title {     /*Header PROFIL DAN KOLEKSI */
+    position: relative;
+    margin: 2rem auto 3rem;
+    padding: 0;
+    display: block;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem auto;
+    border-bottom: 4px solid #DBDBDB;
+    background-color: rgb(224, 219, 219);
+  }
+  
+  .profil-title {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    margin:auto 20px;
+  }
+  
+  .main-content {
+    margin-bottom: 6rem;
+    padding: 20px;
+  }
+  
+  .content-info {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 1rem auto;
+    border-bottom: 1px solid #DBDBDB;
+  }
+  
+  figure img {
+    max-width: 90%;
+    min-height: auto;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    margin: 0.5rem auto;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+    text-align: justify;
+    display: block;
+    position: relative;
+    margin: 0 5px;
+    line-height: 2rem;
+    
+  }
 
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
-  
-  body {
-    font-family: "Roboto", helvetica, arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
+  /***=============================== Table Styles ======================= **/
+  .main-title-jam {     /*Header Jam Operasional */
+    position: relative;
+    margin: 2rem auto 3rem;
+    padding: 0;
+    display: block;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem auto;
+    background-color: rgb(224, 219, 219);
+    bottom: 90px
   }
   
-  div.table-title {
-     display: block;
-    margin: auto;
-    max-width: 600px;
-    padding:5px;
-    width: 100%;
+  .jam-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .main-content-jam {
+    margin-bottom: 6rem;
+    padding: 20px;
   }
   
-  /*** Table Styles **/
-  
+  .content-info-jam {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem auto;
+    border-bottom: 1px solid #DBDBDB;
+  }
   .table-fill {
     background: white;
     border-radius:3px;
     border-collapse: collapse;
     height: 320px;
     margin: auto;
-    max-width: 600px;
+    max-width: 400px;
     padding:5px;
     width: 100%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    animation: float 5s infinite;
+    animation: 5s infinite;
   }
    
   th {
@@ -382,7 +469,7 @@ body { font-family: sans-serif; }
     border-right: 1px solid #343a45;
     font-size:23px;
     font-weight: 100;
-    padding:24px;
+    padding:15px;
     text-align:left;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     vertical-align:middle;
@@ -399,7 +486,7 @@ body { font-family: sans-serif; }
     
   tr {
     border-top: 1px solid #C1C3D1;
-    border-bottom-: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
     color:#666B85;
     font-size:16px;
     font-weight:normal;
@@ -533,17 +620,54 @@ body { font-family: sans-serif; }
     display: inline-block;
   }
   .button.home{
-    background-color: #22b8cf;
+    background-color: #bbd9dd;
     box-shadow:0 5px 10px rgba(34,184,207,.4);
   }
   .button.direction{
-    background-color: #329af0;
+    background-color: #90a2b1;
     box-shadow:0 5px 10px  rgba(50,154,240,.4);
     position: relative;
   }
 
+
+  /*=============================== footer =============================== */
+
   .footer{
-    text-align: center;
-    padding: 90px 15px 40px;
+    text-align: left;
+    padding: auto 15px 40px;
     color: #535353;
+    background-color: #DBDBDB;
   }
+
+  .footer-main-content {
+    margin-bottom: 6rem;
+    padding: 20px;
+  }
+  
+  .footer-content-info {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 1rem auto;
+    border-bottom: 1px solid #DBDBDB;
+  }
+  
+  .footer-subtitle {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    line-height: 2rem;
+    
+  }
+ 
+  .footer-subtitle > figure img {
+    max-width: 50%;
+    min-height: auto;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+
+  

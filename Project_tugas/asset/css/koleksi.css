@@ -1,0 +1,160 @@
+body { font-family: sans-serif; }
+
+/*Menu Bar*/
+.list-cont {
+	position        : relative;
+	margin          : auto auto;
+}
+
+.list-cont a {
+	float          : right;
+	display        : block;
+	color          : grey;
+	text-align     : center;
+	padding        : 14px 16px;
+	text-decoration: none;
+	font-size      : 15px;
+	transition     : 0.5s;
+}
+
+.list-cont a:hover {
+	border-bottom: 2px solid #484848;
+	color        : #655f5f;
+}
+
+.list-cont a.active {
+	color        : black;
+	border-bottom: 2px solid #484848;
+}
+.navbar-brand {
+	display: inline-block;
+	position: relative;
+	margin: auto;
+}
+
+.navbar-brand > img { /*gambar talent bandung */
+  display  : inline-block;
+  max-width: 60%;
+}
+
+/*================ end menu bar =====================*/
+.main1 {
+	margin: auto;
+}
+
+
+.main-title {
+	margin: auto;
+	padding: 0 3rem;
+}
+
+.main-title .title {
+	margin: auto;
+	display: block;
+	font-size: 5rem;
+	color: rgba(52, 73, 94, .7);
+  font-weight: bold;
+  padding: 5px 10px 5px;
+}
+
+.main-title .subtitle {
+	margin: auto;
+	display: block;
+	font-size: 3rem;
+  font-weight: normal;
+  padding: 1rem 10px ;
+  
+}
+
+.main-content > .main-utama {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+    margin: 2rem auto;
+    padding: 1rem 1rem;
+    position: relative;
+    transition: 0,5s;
+    border-bottom: 1px solid #DBDBDB;
+  }
+  figure img {
+    max-width: 90%;
+    position: relative;
+    margin: 20px 30px;
+    
+  }
+  article {
+    text-align: justify;
+    display: block;
+    position: relative;
+    margin: 0 30px;
+    line-height: 3rem;
+  }
+  .main-paragraf{
+    display: block;
+    text-align: justify;
+    display: block;
+    position: relative;
+    margin: auto 40px;
+    line-height: 3rem;
+  }
+  
+
+.main-title {
+	margin: 3rem auto;
+}
+
+.grid-content {
+	margin: auto;
+}
+
+.grid-item {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.content-item .img-content{
+	max-width: 100%;
+	border: 1px solid transparent;
+	border-radius: 12px;
+	padding: 8px;
+}
+
+/*=============================== footer =============================== */
+
+.footer{
+  text-align: left;
+  padding: auto 15px 40px;
+  color: #535353;
+  background-color: #DBDBDB;
+}
+
+.footer-main-content {
+  margin-bottom: 6rem;
+  padding: 20px;
+}
+
+.footer-content-info {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 1rem auto;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.footer-subtitle {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: left;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  line-height: 2rem;
+  
+}
+
+.footer-subtitle > figure img {
+  max-width: 50%;
+  min-height: auto;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}

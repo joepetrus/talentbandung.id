@@ -26,6 +26,10 @@
 
 		<main>
 			<div class="daftar-taman grid-layout">
+                <taman 
+                v-for="taman in daftarTaman"
+                v-bind:data="taman"
+                v-bind
 				<div class="grid-item">
 					<article class="taman">
 						<figure>
@@ -145,6 +149,9 @@
     <script src=""></script>	
 
     <script>
+        Vue.component('taman',{
+            props: ()
+        })
         var app = new Vue ({
             el: "#app",
             data: {
