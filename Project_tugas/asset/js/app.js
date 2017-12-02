@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+    
+/*======= main-content , maint-title adalah class yg akan di scrollreveal ======= */
+    
+    window.sr = ScrollReveal({reset: true}); /*jika true scroll berulang, jika false tidak berulang */
+    sr.reveal('.main-content ',{duration: 1000, origin: 'left',scale: 0.9 });
+    sr.reveal('.main-title',{duration: 1000, origin: 'left', distance: '200px', scale: 5,});
+
+    /*================================= end scroll reveal ================================*/
+
+
+
     
        var daftarTaman = $('.daftar-taman');
        var filter      = $('#filter');
